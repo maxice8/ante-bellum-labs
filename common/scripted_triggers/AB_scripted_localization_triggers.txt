@@ -1,0 +1,32 @@
+tag_requires_definite_article_trigger = {
+	# Here are all the countries that require the definite
+	# article 'the' before the name under standard english
+	# grammar rules.
+	#
+	# - Uses a common noun like "the Baltic Union", "The Frankish Empire".
+	# - Is in plural "the Netherlands", "The Philippines".
+	OR = {
+		tag = CLT # Celtic Union
+		tag = FRK # Frankish Empire
+		tag = UNP # United Principalities
+		tag = BLT # Baltic Union
+		tag = LAT # Latin Empire
+		tag = NSE # North Sea Empire
+		tag = CLE # Celestial Empire
+		tag = JPE # Japanese Empire
+		tag = HLE # Hellenic Empire
+		tag = AME # Armenian Empire
+		tag = ROM # Roman Empire
+		tag = MGE # Mongol Empire
+		
+		# 'United Kingdom' is not a tag but is done via
+		# the 'override_country_name' to 'United Kingdom'
+		# fortunately enough for us it also sets a country
+		# flag we can check. 
+		has_country_flag = proclaimed_uk # United Kingdom
+
+		# Use any triggers you feel like here to catch
+		# all instances of countries that match the rules.
+	}
+}
+

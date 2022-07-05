@@ -1,0 +1,26 @@
+can_increase_stability = {
+	condition = {
+		tooltip = "ab_frankish_crisis_cant_stab"
+		potential = {
+			tag = FRC
+		}
+		allow = {
+			OR = {
+				has_country_flag = had_frankish_succession_crisis
+				has_disaster = frankish_succession_crisis
+			}
+		}
+	}
+	condition = {
+		tooltip = "ab_andalusian_civil_war_cant_stab"
+		potential = {
+			tag = ADU
+		}
+		allow = {
+			OR = {
+				has_country_flag = had_andalusian_civil_war
+				has_disaster = andalusian_civil_war
+			}
+		}
+	}
+}
